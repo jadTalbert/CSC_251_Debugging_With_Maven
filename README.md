@@ -1,4 +1,4 @@
-# Your Goals
+# Instructions
 
 #### This is a debugging repo that has a maven project structure. The project is intentionally problematic in-terms of errors and it is your job to debug the problems.
 
