@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------
+Test set: com.lab.gradebook.GradebookTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! -- in com.lab.gradebook.GradebookTest
+com.lab.gradebook.GradebookTest.testAddScoreDoesNotThrowNPE -- Time elapsed: 0.018 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.scores" is null
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at com.lab.gradebook.GradebookTest.testAddScoreDoesNotThrowNPE(GradebookTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.scores" is null
+	at com.lab.gradebook.Student.addScore(Student.java:28)
+	at com.lab.gradebook.GradebookTest.lambda$testAddScoreDoesNotThrowNPE$0(GradebookTest.java:23)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+
+com.lab.gradebook.GradebookTest.testGetTopPerformer -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.scores" is null
+	at com.lab.gradebook.Student.addScore(Student.java:28)
+	at com.lab.gradebook.GradebookTest.testGetTopPerformer(GradebookTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.lab.gradebook.GradebookTest.testClassAveragePrecision -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.scores" is null
+	at com.lab.gradebook.Student.addScore(Student.java:28)
+	at com.lab.gradebook.GradebookTest.testClassAveragePrecision(GradebookTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.lab.gradebook.GradebookTest.testFindStudentByIdWithNewStringInstance -- Time elapsed: 0 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.scores" is null
+	at com.lab.gradebook.Student.addScore(Student.java:28)
+	at com.lab.gradebook.GradebookTest.testFindStudentByIdWithNewStringInstance(GradebookTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
