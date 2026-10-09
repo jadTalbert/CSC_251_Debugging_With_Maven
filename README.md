@@ -18,6 +18,5 @@
 
 #### Example bug fix comment:
 ```json
-/*BUG 3: The referenced array was using an invalid index in the enhanced for-loop, the correction made was to decrement the value by 1 in the loop construct to avoid out-of-bounds and NULL pointer exception errors.
-*/
+//BUG 3: The referenced array was using an invalid index in the enhanced for-loop, the correction made was to decrement the value by 1 in the loop construct to avoid out-of-bounds and NULL pointer exception errors.
 ```
