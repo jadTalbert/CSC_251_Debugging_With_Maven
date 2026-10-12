@@ -13,7 +13,7 @@
 # Grading Rubric:
 
 - All code must successfully compile
-- All defects must be identified and where they are found in the code, you must add a comment explaining how you fixed them problem(e.g. Bug 1 Found: The problem was a missing semi-colon and it caused a compilation failure)
+- All defects must be identified and where they are found in the code, you must add a comment explaining how you fixed the problem(e.g. Bug 1 Found: The problem was a missing semi-colon and it caused a compilation failure)
 -  Submit all fixed Java classes and associated unit tests in Canvas.
 
 #### Example bug fix comment:
